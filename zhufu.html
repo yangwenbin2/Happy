@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新年祝福</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    #greeting {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    #fireworksButton {
+      font-size: 16px;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #4285f4;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="greeting">祝大家新年快乐，身体健康，万事如意！</div>
+  <button id="fireworksButton">点我放烟花</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const fireworksButton = document.getElementById('fireworksButton');
+
+      function launchFireworks() {
+        alert('烟花绽放，新的一年带来更多喜悦和成功！🎆🎉');
+      }
+
+      fireworksButton.addEventListener('click', launchFireworks);
+    });
+  </script>
+</body>
+</html>
